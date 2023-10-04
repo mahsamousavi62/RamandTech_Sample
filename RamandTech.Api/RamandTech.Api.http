@@ -1,0 +1,14 @@
+﻿@RamandTech.Api_HostAddress = https://localhost:7248
+
+POST {{RamandTech.Api_HostAddress}}/api/v1/users/Authenticate
+Content-Type: application/json
+
+{
+  "username": "user1",
+  "password": "111111"
+}
+
+###
+
+GET {{RamandTech.Api_HostAddress}}/api/v1/users 
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsnR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJuYmYiOjE2OTY0MjAwOTAsImV4cCI6MTY5NjUwNjQ5MCwiaWF0IjoxNjk2NDIwMDkwfQ.qUghdVGsjAt96PGhZ8G4dNUd6W-2P9lNLgn2zGOlkYQ
